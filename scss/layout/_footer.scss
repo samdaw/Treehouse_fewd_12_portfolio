@@ -1,0 +1,25 @@
+footer {
+    height: 100vh;
+    background-color: $base;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @include media(tablet) {
+    	flex-direction: row;
+    }
+    p {
+    	padding: 1rem;
+    }
+    a {
+    	color: $white;
+    	&::after {
+    		background: $white;
+    	}
+
+    	&:hover {
+    		color: $white;
+    	}
+    }
+}

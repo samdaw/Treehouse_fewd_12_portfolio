@@ -1,0 +1,13 @@
+$white	:	#fff;
+$base	:	#000;
+$three 	:	lighten($base, 30%);
+$four	:	lighten($base, 40%);
+$five	:	lighten($base, 50%);
+$nine	:	lighten($base, 93%);
+$bg		:	lighten($base, 98%);
+
+
+$brk-tablet		:	700px;
+$brk-desktop	:	1024px;
+
+$animate		:	all 250ms cubic-bezier(.02, .01, .47, 1);

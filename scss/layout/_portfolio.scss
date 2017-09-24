@@ -1,0 +1,68 @@
+.content {
+    transform: translateZ(0) scale(1);
+    background: $white;
+}
+
+.intro {
+    z-index: 10;
+    width: 90%;
+    background: $bg;
+    margin: 0 auto;
+    position: relative;
+    padding: 4rem 2rem;
+    top: -10vh;
+    @include media(tablet) {
+      padding: 4rem 4rem;
+    }
+    @include media(desktop) {
+      padding: 6rem 8rem;
+    }
+}
+
+.hover {
+    box-shadow: 0 2px 4px 0 $nine;
+    transition: $animate;
+}
+
+.hover:hover {
+  @include media(tablet) {
+    box-shadow: 0 5px 10px $nine;
+    transform: translate(0,-4px);
+    transition-delay: 0s !important;
+  }
+}
+
+.portfolio {
+    width: 90%;
+    margin: 0 auto 6rem auto;
+    padding: 0;
+    background: $bg;
+    border-bottom: 2px solid $nine;
+}
+
+.portfolio img,
+.portfolio image {
+    max-width: 100%;
+}
+
+.portfolioText {
+  text-align: center;
+  padding: 2rem;
+  h2 {
+    @include text(16px, 1.6, 400);
+  }
+  p {
+    padding: 1rem;
+  }
+}
+
+// .box-hide {
+//     opacity: 0;
+//     transform: translate3d(0,10%,0);
+// }
+
+// .box {
+//     transform: translateZ(0);
+//     opacity: 1;
+//     transition: opacity .5s ease-in,transform 1.7s cubic-bezier(0,.14,.19,1);
+// }

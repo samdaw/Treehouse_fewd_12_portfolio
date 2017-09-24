@@ -1,0 +1,39 @@
+body {
+	font-family: 'Nunito', sans-serif;
+	@include text(1em, 1.6, 300, $three);
+}
+
+h1 {
+	@include text(1.3em, 1.6, 300, $three);
+	@include media(tablet) {
+		@include text(1.5em, 1.6, 300, $four);
+	}
+}
+
+a {
+	text-decoration: none;
+	color: $three;
+	margin: 0 1rem;
+	padding: .5rem 0;
+	position: relative;
+	transition: $animate;
+
+	&::after {
+		height: 2px;
+		width: 100%;
+		background: $three;
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		transform: scaleX(0);
+		transition: $animate;
+	}
+
+	&:hover {
+		color: $base;
+		&::after {
+			transform: scaleX(1);
+		}
+	}
+}
